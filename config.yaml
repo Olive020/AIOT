@@ -1,0 +1,17 @@
+train: 
+  images: train/images   # 訓練圖像資料夾路徑
+  labels: train/labels   # 訓練標籤資料夾路徑
+val: 
+  images: valid/images   # 驗證圖像資料夾路徑
+  labels: valid/labels   # 驗證標籤資料夾路徑
+test: 
+  images: test/images   # 驗證圖像資料夾路徑
+  labels: test/labels   # 驗證標籤資料夾路徑
+
+
+nc: 3                # 類別數量（根據您的數據集，這裡是3因為您有三個類別）
+names: ['normal', 'weak', 'withered']  # 類別名稱列表（根據您的數據集）
+# 以下是可選的設定，根據您的需求進行調整
+batch_size: 8   # 訓練時的批次大小
+epochs: 50      # 訓練時的迭代次數
+img_size: 416   # 輸入圖像尺寸
