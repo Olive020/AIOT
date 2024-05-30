@@ -4,7 +4,7 @@ from ultralytics import YOLO
 model = YOLO('yolov8n.pt')  # 替換為您的模型文件路徑
 
 # 訓練模型
-model.train(data='config.yaml', epochs=50, batch=8)  # 將 batch_size 改為 batch
+model.train(data='data.yaml', epochs=50, batch=8)  # 將 batch_size 改為 batch
 
 # 評估模型
 results = model.val()
